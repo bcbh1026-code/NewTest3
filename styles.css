@@ -1,0 +1,90 @@
+:root {
+    --superhero: 'Bangers', cursive;
+    --fantasy: 'MedievalSharp', cursive;
+    --space: 'Orbitron', sans-serif;
+    --military: 'Black Ops One', cursive;
+    --romantic: 'La Belle Aurore', cursive;
+    --scary: 'Creepster', cursive;
+    --cowboy: 'Rye', cursive;
+    --regular: sans-serif;
+    --fantasy: 'MedievalSharp', cursive;
+    --font: var(--regular);
+    --sharp: 0;
+    --soft: 10px;
+    --round: 100px;
+    
+    --image: var(--soft);
+    
+    --background: #f5f5f5;
+    --text: #222222;
+    
+    --light: var(--background);
+    --dark: var(--text);
+}
+
+
+body, html {
+    margin: 0;
+    padding: 10px;
+    background: var(--background);
+    color: var(--text);
+    font-family: var(--font);
+}
+
+.image-container {
+  display: flex;             /* Activates FlexboxLayout */
+  justify-content: space-between; /* Pushes one image to the far left, and the other to the far right */
+  align-items: center;       /* Vertically aligns the images in the middle */
+  width: 100%;               /* Spans the full width of the parent container */
+  gap: 40px;                 /* Adds spacing between images if the screen shrinks */
+}
+
+.side-image {
+  width: 20%;                /* Leaves a 4% gap total between them */
+  height: auto;              /* Maintains the aspect ratio */
+  object-fit: cover;  
+       /* Prevents the image from stretching awkwardly */
+}
+
+
+
+
+h2{
+    color: red;
+}
+
+
+a {
+    color: var(--text);
+}
+
+input {
+    display: block;
+    margin-left:auto;
+    margin-right:auto;
+}
+
+::placeholder {
+    color: var(--text);
+    color:blue;
+}
+
+.btn {
+    border-radius: var(--image);
+    padding: 5px 5px;
+    border: none;
+    background: var(--text);
+    background-color:red;
+    color:aqua;
+    font-weight: bold;
+    box-sizing: border-box;
+    display: block;
+    margin-left:auto;
+    margin-right:auto;
+    margin-top:3px;
+    margin-bottom:3px;
+    cursor: pointer;
+    font-family: var(--font);
+    width: 130px;
+}
+ 
